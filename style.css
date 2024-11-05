@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+}
+.navbar img {
+    width: 100px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('https://placehold.co/1920x1080') no-repeat center center/cover;
+}
+.hero .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.hero .content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero .content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.hero .content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.section {
+    padding: 20px;
+}
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.section .row {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.section .row img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.section .row .slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.section .row .slide-button.left {
+    left: 0;
+}
+.section .row .slide-button.right {
+    right: 0;
+}
+.footer {
+    padding: 20px;
+    background-color: #141414;
+    text-align: center;
+}
+.footer p {
+    margin: 5px 0;
+}

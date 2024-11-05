@@ -1,0 +1,149 @@
+<html>
+ <head>
+  <title>
+   Netflix Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div class="navbar">
+   <img alt="Netflix logo" height="50" src="logo.jpg" width="100"/>
+   <ul>
+    <li>
+     <a href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      TV Shows
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Movies
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      New &amp; Popular
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      My List
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="hero">
+   <div class="content">
+    <h1>
+     Featured Movie Title
+    </h1>
+    <p>
+     Some description about the featured movie.
+    </p>
+    <button>
+     Play
+    </button>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    Trending Now
+   </h2>
+   <div class="row">
+    <button class="slide-button left" onclick="slideLeft('trending')">
+     <i class="fas fa-chevron-left"></i>
+    </button>
+    <img alt="Trending movie 1" height="300" src="https://storage.googleapis.com/a1aa/image/fFSn6hnCXMTqFifUUnOLoqvkrJ1j3hxgRB7JfDegd8tajw3OB.jpg" width="200"/>
+    <img alt="Trending movie 2" height="300" src="https://storage.googleapis.com/a1aa/image/On86TVknUbYdG5afa1TJWqybNf2pfeQ81AiEKW8b8GfUIhvdC.jpg" width="200"/>
+    <img alt="Trending movie 3" height="300" src="https://storage.googleapis.com/a1aa/image/eEFkckghWN1IR6eTr4kCCIKrgd0PrbZlsJ3fOwiQaLfPjw3OB.jpg" width="200"/>
+    <img alt="Trending movie 4" height="300" src="https://storage.googleapis.com/a1aa/image/kgk6yU9STKZWL5pHJZMq3ZJVtteKmqmYFM8eNkTeCX16R4bnA.jpg" width="200"/>
+    <img alt="Trending movie 5" height="300" src="https://storage.googleapis.com/a1aa/image/NfZvUzfubzqAiE0o1y5uXAe3WuEiVnGdfl8RewnZrLtDIhvdC.jpg" width="200"/>
+    <img alt="Trending movie 6" height="300" src="https://storage.googleapis.com/a1aa/image/g2Pjq7erHYwPM6RykJKmGGXAFHjp4h8kwyZGSe1BouS5I8tTA.jpg" width="200"/>
+    <img alt="Trending movie 7" height="300" src="https://storage.googleapis.com/a1aa/image/gDcRcsP7XfSzEyktczd7pvQH1DchQpLnmvYgfqym0rFyI8tTA.jpg" width="200"/>
+    <img alt="Trending movie 8" height="300" src="https://storage.googleapis.com/a1aa/image/W9eAqYFTWrxuHykWjpG9YgAes4QkHWOiEiGERmThvBdfR4bnA.jpg" width="200"/>
+    <img alt="Trending movie 9" height="300" src="https://storage.googleapis.com/a1aa/image/wRgJoneuvYwuTyFEWGhTLqjHX7vz0T6qv8Jue1lbPUImI8tTA.jpg" width="200"/>
+    <img alt="Trending movie 10" height="300" src="https://storage.googleapis.com/a1aa/image/E4TBqIBMWjJxCZ4aLyyo3t77VYYTsecaV6XPQnreqmwvI8tTA.jpg" width="200"/>
+    <button class="slide-button right" onclick="slideRight('trending')">
+     <i class="fas fa-chevron-right"></i>
+    </button>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    Top Picks for You
+   </h2>
+   <div class="row" id="top-picks">
+    <button class="slide-button left" onclick="slideLeft('top-picks')">
+     <i class="fas fa-chevron-left"></i>
+    </button>
+    <img alt="Top pick movie 1" height="300" src="https://storage.googleapis.com/a1aa/image/jpvhqt2bPXqHDF5JVxOPzmWpqhOej9DdXveRVXOzFtyfQ4bnA.jpg" width="200"/>
+    <img alt="Top pick movie 2" height="300" src="https://storage.googleapis.com/a1aa/image/gcbIDLRGmcIuLBhQMaE28PogJQKdkEl4rJReOFRIRvoUEetTA.jpg" width="200"/>
+    <img alt="Top pick movie 3" height="300" src="https://storage.googleapis.com/a1aa/image/fSfr7pznT5r2yknCQuhsKAJTcNmO9Wu3A69dfakFal3ER4bnA.jpg" width="200"/>
+    <img alt="Top pick movie 4" height="300" src="https://storage.googleapis.com/a1aa/image/VFdfMNMLjDVuMa6e8xKbOeO0yAzYrKwYo8U5dJxK5YBBR4bnA.jpg" width="200"/>
+    <img alt="Top pick movie 5" height="300" src="https://storage.googleapis.com/a1aa/image/jBWW2aMF8IKKLxEVH1gGbvGSdhOIWwNF1Td5fnkP4MejI8tTA.jpg" width="200"/>
+    <img alt="Top pick movie 6" height="300" src="https://storage.googleapis.com/a1aa/image/U60f25xPGwxKPyttC8rOoIQacW9gCRYjMFpm98UoEi0kEetTA.jpg" width="200"/>
+    <img alt="Top pick movie 7" height="300" src="https://storage.googleapis.com/a1aa/image/eBWTXFPwpSU7fEoZo3sLfoRvu03Dby2cIdhS7WdqS50XS4bnA.jpg"  width="200"/>
+    <img alt="Top pick movie 8" height="300" src="https://storage.googleapis.com/a1aa/image/AS1QDk62qRZSH1h8MFMmfJLZraTzu5Cp9lMADQ4fBjGlI8tTA.jpg" width="200"/>
+    <img alt="Top pick movie 9" height="300" src="https://storage.googleapis.com/a1aa/image/jHifYDmrx5TyJyvv7jLi9pOhNNgfRW7OddCPiXCJPgOxI8tTA.jpg" width="200"/>
+    <img alt="Top pick movie 10" height="300" src="https://storage.googleapis.com/a1aa/image/fub2FsbopkwgPSFreLyu5jcTRwhNTElh4fBelb7poUpikw3OB.jpg" width="200"/>
+    <button class="slide-button right" onclick="slideRight('top-picks')">
+     <i class="fas fa-chevron-right"></i>
+    </button>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    New Releases
+   </h2>
+   <div class="row">
+    <button class="slide-button left" onclick="slideLeft('new-releases')">
+     <i class="fas fa-chevron-left"></i>
+    </button>
+    <img alt="New release movie 1" height="300" src="https://storage.googleapis.com/a1aa/image/0swrAVCbBdIHJJaorjetFerBYNu4rzjJT8pAkZpr8YQHJ8tTA.jpg" width="200"/>
+    <img alt="New release movie 2" height="300" src="https://storage.googleapis.com/a1aa/image/5Y4uTheCvVV1Ba5PLH732j58ygx92IR3u79SpNnVbaWVEetTA.jpg" width="200"/>
+    <img alt="New release movie 3" height="300" src="https://storage.googleapis.com/a1aa/image/Nq8s90TePcUofkDCkL70o0GXrbacavQ7e1d0AiRKCfmXjw3OB.jpg" width="200"/>
+    <img alt="New release movie 4" height="300" src="https://storage.googleapis.com/a1aa/image/31jTPIxUcV4sOF9WGPLH4eAhyhQ8CSM9NiPuZOcJ6XtiEetTA.jpg" width="200"/>
+    <img alt="New release movie 5" height="300" src="https://storage.googleapis.com/a1aa/image/gN5Kc3e0l51bZSQER2bsOEd4zREqimvJpL3oqElyKRZcEetTA.jpg" width="200"/>
+    <img alt="New release movie 6" height="300" src="https://storage.googleapis.com/a1aa/image/YeJUZGmqAR1LSiicH3iwaanwOe3AiVAmwPoVXCAaezdQR4bnA.jpg" width="200"/>
+    <img alt="New release movie 7" height="300" src="https://storage.googleapis.com/a1aa/image/9J2ijxxeg5Q5OKg1mVYyaoVReLfViuTALdcyqT18yJy3R4bnA.jpg" width="200"/>
+    <img alt="New release movie 8" height="300" src="https://storage.googleapis.com/a1aa/image/oNSvxPq5mr48K1EE2s4Sv6d91T0UxQHaNO5jN9W1OBKLCf2JA.jpg" width="200"/>
+    <img alt="New release movie 9" height="300" src="https://storage.googleapis.com/a1aa/image/4KHv2YI7LN6lJRgmoe8We2R5dJyAYIs1l1bQxmRksNxDJ8tTA.jpg" width="200"/>
+    <img alt="New release movie 10" height="300" src="https://storage.googleapis.com/a1aa/image/tX2SQB7at24TJhQoTz0iypAjCvNIvhD0NH8keArCsbUeI8tTA.jpg" width="200"/>
+    <button class="slide-button right" onclick="slideRight('new-releases')">
+     <i class="fas fa-chevron-right"></i>
+    </button>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    Questions? Call 1-800-000-0000
+   </p>
+   <p>
+    Netflix Clone © 2023
+   </p>
+  </div>
+  <script>
+   function slideLeft(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        }
+
+        function slideRight(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+  </script>
+ </body>
+</html>
